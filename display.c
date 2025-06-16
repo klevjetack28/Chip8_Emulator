@@ -43,7 +43,6 @@ void print_char(int x, int y, char c)
     for (int i = 0; i < CHAR_HEIGHT; i++)
     {
         row = rev8((*bits)[i]);
-        fprintf(stderr, "Original: %u, Reversed: %u\n", (*bits)[i], row);
         for (int j = 0; j < CHAR_WIDTH; j++)
         {
             on = (row & (1 << j)) ? 1 : 0;
@@ -59,7 +58,6 @@ void print_string(char *string, int length)
 {
     for (int i = 0; i < length; i++)
     {
-        fprintf(stderr, "%c\n", *string);
         print_char(i * CHAR_WIDTH, 0, *string++);
     }
 }
