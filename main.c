@@ -9,7 +9,7 @@ int main()
     while (1)
     {
         clear_screen();
-        print_string("DE4DB33F", 8);
+        print_string("0123456789abcdef", 16);
         draw_screen();
         usleep(1000000 / 60); // 60 Hz
     }
