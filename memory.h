@@ -16,8 +16,6 @@ uint8_t memory_read(uint16_t address);
 void memory_write(uint16_t address, uint8_t value);
 void load_rom();
 void load_font();
-
-// Memory Utilities
-uint8_t rev8(uint8_t n);
+void print_memory();
 
 #endif // MEMORY_H

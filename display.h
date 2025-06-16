@@ -10,6 +10,7 @@
 #define SCREEN_HEIGHT 32
 #define CHAR_WIDTH 4
 #define CHAR_HEIGHT 5
+#define SPRITE_WIDTH 8
 
 #include "fonts.h"
 #include "memory.h"

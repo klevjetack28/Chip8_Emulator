@@ -42,10 +42,10 @@ void print_char(int x, int y, char c)
     bool on;
     for (int i = 0; i < CHAR_HEIGHT; i++)
     {
-        row = rev8((*bits)[i]);
+        row = (*bits)[i];
         for (int j = 0; j < CHAR_WIDTH; j++)
         {
-            on = (row & (1 << j)) ? 1 : 0;
+            on = (row & (0b10000000 >> j)) ? 1 : 0;
             if (on)
             {
                 draw_pixel(j + x, i + y, true); 
